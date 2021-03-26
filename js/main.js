@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var win_w = $(window).width();
+  const win_w = $(window).width();
     
   $(window).on('resize', function(){
       win_w = $(this).width();
@@ -28,7 +28,7 @@ $(".toggle_gnb .navbar > li").on('click', function(){
       $('.navbar .sub_gnb').slideUp();
       $(this).find('.sub_gnb').stop().slideToggle();
 });
-    var $grid = $('.best_con').isotope({
+    const $grid = $('.best_con').isotope({
       itemSelector: '.best_con>li',
       layoutMode: 'fitRows',
     });
